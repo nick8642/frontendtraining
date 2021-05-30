@@ -24,6 +24,9 @@ a:link, a:active{
     text-decoration: none;
 }
 
+a {
+    cursor: pointer;
+}
 
 .top-section{
     margin-top:133px;
@@ -53,9 +56,11 @@ a:link, a:active{
         font-weight: 600;
         font-size: $submitbutton;
         border-radius:8px;
+        letter-spacing: 3px;
     }
     &__termscondition-checkbox{
         width:18px !important;
+        height:18px;
         margin-top:28px;
         margin-bottom:28px;
     }
@@ -67,7 +72,10 @@ a:link, a:active{
         margin-top:20px;
         margin-left:-42px;
     }
-    
+    [type="checkbox"]
+    {
+        vertical-align:middle;
+    }
 }
 
 input{
@@ -135,8 +143,7 @@ input:focus{
     margin-bottom:81px;
 
     &__section{
-        padding-left: 25px;
-        padding-top:25px;
+        padding: 25px 0px 71px 25px;
         background:$background;
         float:left;
         width:calc(50% - 50px);
@@ -179,7 +186,6 @@ input:focus{
         padding-right:28px;
         font-size: $bottom-box-text;
         color:$bottom-box-text;
-        margin-bottom:71px;
         font-size: 18px;
         line-height: 28px;
         font-weight: normal;
@@ -200,7 +206,7 @@ body{
         width:calc(100% - 30px);
     }
     input{
-        width:90%;
+        width:99%;
         padding:15px;
         font-size:12px;
     }
@@ -247,6 +253,7 @@ body{
     .bottom-container {
         margin-bottom: 20px;
     }
+
 }
 
 @media only screen and(min-width:600px) and (max-width:1024px){
