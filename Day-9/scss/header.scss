@@ -17,4 +17,11 @@
         padding-bottom: 20px;
         color:$logo-color;
     }
+    @media only screen and (max-width:600px){
+        &__logo-container{
+            margin:0 auto;
+            width:calc(100% - 30px);
+        }
+    }
 }
+

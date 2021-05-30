@@ -1,0 +1,42 @@
+@import 'reset';
+@import 'clear' ;
+
+
+
+.carousal{
+    background-color:#817e7e;
+    margin:0 auto;
+    max-width: 1372px;
+    width:calc(100% - 300px);
+    margin-top:50px;
+    height:600px;
+
+    &__left-link{
+        float:left;
+        width:10%;
+        height:100%;
+    }
+    &__left-link:hover{
+        background-color:#d6d6d6;
+    }
+    &__text{
+        float:left;
+        width:80%;
+        text-align: center;
+        margin-top:270px;
+        font-size:36px;
+    }
+    &__right-link{
+        float:left;
+        width:10%;
+        height:100%;
+    }
+
+    &__right-link:hover{
+        background-color:#d6d6d6;
+    }
+    &__left-image{
+        width: 150px;
+    }
+}
+
