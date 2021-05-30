@@ -59,6 +59,14 @@ a:link, a:active{
         margin-top:28px;
         margin-bottom:28px;
     }
+    &__input1-container{
+        position:relative;
+    }
+    &__input-message-image{
+        position:absolute;
+        margin-top:20px;
+        margin-left:-42px;
+    }
     
 }
 
@@ -227,6 +235,7 @@ body{
     .bottom-container__box-heading{
         padding-right:0px;
         font-size:28px;
+        margin-right: 10px;
     }
     .bottom-container__box-text{
         font-size:14px;

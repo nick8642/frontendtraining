@@ -23,12 +23,14 @@
             <div class="top-section__form-container">
                 <form action="" method="post">
                     <p class="top-section__form-header">Enter your email and URL below (e.g. www.example.com)</p>
-                    <input type="email" class="top-section__email" id="link-checker__email" name="link-checker__email" required/>
-                    
+                    <div class="top-section__input1-container">
+                        <input type="email" class="top-section__email" id="link-checker__email" name="link-checker__email" required/>
+                        <img  class="top-section__input-message-image" src="images/input-message.jpg"/>
+                    </div>
                     <input type="url" placeholder="Enter your URL" id="link-checker__url" name="link-checker__url" required><br/>
                     
                     <input type="checkbox" class="top-section__termscondition-checkbox"  id="terms-checkbox" name="terms-checkbox" required/>
-                    <label class="top-section__terms-label">By entering your URL you agree to these Terms & Conditions</label><br/>
+                    <label class="top-section__terms-label">By entering your URL you agree to these <a style="text-decoration:underline;">Terms & Conditions</a></label><br/>
 
                     <button type="submit" class="top-section__submit-button">Submit</button>
                 </form>
