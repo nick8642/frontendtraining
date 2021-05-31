@@ -80,6 +80,10 @@ a {
     {
         vertical-align:middle;
     }
+    &__terms-label{
+        color: #292929;
+
+    }
 }
 
 input{
@@ -130,11 +134,13 @@ input:focus{
         margin-top:32px;
     }
     &__box-heading{
+        color:#0A1D41;
         margin-top:20px;
         font-weight: 600;
         font-size: $box-heading;
     }
     &__box-text{
+        color:#292929;
         width:80%;
         margin-top:10px;
         margin-bottom:35px;

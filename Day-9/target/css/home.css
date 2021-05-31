@@ -110,6 +110,8 @@ a {
             filter: grayscale(100%); }
   .top-section [type="checkbox"] {
     vertical-align: middle; }
+  .top-section__terms-label {
+    color: #292929; }
 
 input {
   width: 80%;
@@ -155,10 +157,12 @@ input:focus {
   .box-container__box-image {
     margin-top: 32px; }
   .box-container__box-heading {
+    color: #0A1D41;
     margin-top: 20px;
     font-weight: 600;
     font-size: 18px; }
   .box-container__box-text {
+    color: #292929;
     width: 80%;
     margin-top: 10px;
     margin-bottom: 35px;
