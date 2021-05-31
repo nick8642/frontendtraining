@@ -105,7 +105,9 @@ a {
   .top-section__input-message-image {
     position: absolute;
     margin-top: 20px;
-    margin-left: -42px; }
+    margin-left: -42px;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
   .top-section [type="checkbox"] {
     vertical-align: middle; }
 
