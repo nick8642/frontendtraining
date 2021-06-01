@@ -67,7 +67,7 @@ a:link, a:active {
   color: black;
   text-decoration: none; }
 
-a {
+a, button {
   cursor: pointer; }
 
 .top-section {
@@ -108,6 +108,12 @@ a {
     margin-left: -42px;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%); }
+  .top-section__input-message-image:focus {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
+  .top-section__input1-container:focus {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
   .top-section [type="checkbox"] {
     vertical-align: middle; }
   .top-section__terms-label {
