@@ -1,0 +1,422 @@
+@import 'reset-css';
+@import 'font';
+@import 'color';
+
+
+*{
+    font-family: $font-family !important;
+}
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+} 
+
+
+
+.footer{
+    background:$footer-background !important;
+    &__container{
+        margin:0 auto;
+        max-width:1372px;
+        width:calc(100% - 72px);
+        display:flex;
+
+    }
+    &__left-container{
+        width:50%;
+    }
+    &__right-container{
+        width:50%;
+        opacity:0.7;
+        margin-top:36px;
+        margin-bottom:36px;
+        text-align: right;
+    }
+    &__hashout{
+        opacity:0.5;
+        margin-top:2px;
+        font-size: $hashout;
+        margin:2px;
+        padding:3px 0px;
+        font-style:italic;
+    }
+    &__terms-condition{
+        
+        margin-right:24px;
+    }
+    &__copyright{
+        opacity:0.5;
+        font-size: $copyright;
+        font-weight: 600;
+        margin-top:26px;
+        padding:1px;
+    }
+    @media only screen and (max-width:600px){
+        &__container{
+            margin:0 auto;
+            width:calc(100% - 30px);
+        }
+        &__right-container{
+            
+            margin-top:15px;
+            margin-bottom: 20px;
+        }
+        &__terms-condition{
+            font-size:12px;
+            margin-right:10px;
+        }
+        &__privacy-policy{
+            font-size:12px;
+        }
+        &__copyright{
+            margin-top:15px;
+        }
+    }
+    @media only screen and(min-width:600px) and (max-width:1024px){
+        &__container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        &__left-container{
+            grid-column: 1 / 3;
+        }
+        &__container{
+            margin:0 auto;
+            width:calc(100% - 72px); 
+        }
+    }
+}
+
+.header{
+    background-color: $header-background;
+
+    &__logo-container{
+        margin:0 auto;
+        max-width:1372px;
+        width:calc(100% - 72px);
+        font-weight:bolder;
+    }
+    &__logo{
+        padding-top:20px;
+        padding-bottom: 20px;
+        color:$logo-color;
+    }
+    @media only screen and (max-width:600px){
+        &__logo-container{
+            margin:0 auto;
+            width:calc(100% - 30px);
+        }
+    }
+}
+
+main{
+    margin:0 auto;
+    max-width:1372px;
+    width:calc(100% - 72px);
+}
+
+a:link, a:active{
+    color:$anchor-color;
+    text-decoration: none;
+}
+
+a,button {
+    cursor: pointer;
+}
+
+.top-section{
+    margin-top:133px;
+    margin-bottom:80px;
+    display:flex;
+
+    &__form-container{
+        margin-top:133px;
+        width:60%;
+    }
+    &__form-header{
+        margin-bottom: 14px;
+        color:#292929;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: normal;
+    }
+    &__email{
+        margin-bottom:30px;
+    }
+    &__submit-button{
+        padding:20px 67px;
+        color: $button;
+        border:1px solid $input-border;
+        background:$background;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: $submitbutton;
+        border-radius:8px;
+        letter-spacing: 3px;
+    }
+    &__termscondition-checkbox{
+        width:18px !important;
+        height:18px;
+        margin-top:28px;
+        margin-bottom:28px;
+    }
+    &__input1-container{
+        position:relative;
+        
+    }
+    
+    &__input-message-image{
+        position:absolute;
+        margin-top:20px;
+        margin-left:-42px;
+        filter: grayscale(100%);
+    }
+    
+    [type="checkbox"]
+    {
+        vertical-align:middle;
+    }
+    &__terms-label{
+        color: #292929;
+
+    }
+
+    @media only screen and(min-width:600px) and (max-width:1024px){
+
+        flex-wrap:wrap;
+        margin-top:30px;
+        margin-bottom: 30px;
+            
+        &__form-container{
+            width:100%;
+            margin-top:13px;
+        }
+
+        &__submit-button{
+            margin-bottom:50px;
+        }
+    }
+    @media only screen and (max-width:600px){
+       
+        flex-wrap: wrap;
+        margin-top:10px;
+        margin-bottom: 30px;
+
+        &__terms-label{
+            font-size:12px;
+        }
+        &__form-container{
+            width:100%;
+            margin-top:13px;
+            
+        }
+        &__form-header{
+            font-size:16px;
+        }
+
+
+        &__submit-button{
+            margin-bottom:20px;
+            margin-top:10px;
+        }
+    }
+    
+
+}
+
+input{
+    width:80%;
+    padding:20px;
+    border-radius: 8px;
+    background-color: $background;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    margin-left:1px;
+    font-size:16px;
+    letter-spacing: 0.11em;
+    color: #090909;
+    font-weight: 600;
+    line-height: 20px;
+}
+input:focus{
+    border: 1px solid $input-border; 
+    box-sizing: border-box;
+    border-radius: 8px; 
+}
+
+
+.box-container{
+    width:40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    
+    &__box-parent{
+        width:calc(45% - 26px);
+        background:$boxparent;
+        padding-left:26px;
+        border-radius: 8px;
+        border:1px;
+        padding-bottom:37px;
+        font-weight: 300;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    &__box-parent:nth-child(2n) {
+        margin-top:37px;
+     }
+    &__box-parent:nth-child(2n+1) {
+        margin-bottom: 38px;
+    }
+
+    &__box-image{
+        margin-top:32px;
+    }
+    &__box-heading{
+        color:#0A1D41;
+        margin-top:20px;
+        font-weight: 600;
+        font-size: $box-heading;
+    }
+    &__box-text{
+        color:#292929;
+        width:80%;
+        margin-top:10px;
+        line-height: 26px;
+        font-size: $box-text;
+    }
+
+    @media only screen and(min-width:600px) and (max-width:1024px){
+        width:100%;
+    }
+
+    @media only screen and (max-width:600px){
+            width:100%;
+        &__box-parent{
+            width:calc(100% - 27px);
+            margin:0% !important;
+            margin-bottom:30px !important;
+        }
+
+    }
+
+}
+
+.bottom-container{
+    margin-bottom:81px;
+    display:flex;
+
+    &__section{
+        padding: 25px 0px 71px 25px;
+        background:$background;
+        border-radius: 8px; 
+        margin-right:49px;
+    }
+    &__section:nth-child(2){
+        margin-right:0px;
+    }
+    
+    &__image-section{
+        margin-bottom:29px;
+        border-radius: 8px;
+        height:370px;
+        border:1px;
+        width:calc(100% - 25px);
+        background: linear-gradient(101.4deg,$image-section-background 0%, rgba(219, 219, 219, 0.56) 60.29%);
+    }
+    &__box-heading{
+        padding-right:250px;
+        line-height: 45px;
+        margin-bottom:15px;
+        color:$bottom-box-heading-color;
+        font-weight: 900;
+        font-size: $bottom-box-heading;
+        font-weight: bold;
+        line-height: 45px;
+    }
+    &__box-subheading{
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom:7px;
+        font-size:20px;
+        line-height: 30px;
+        font-size: $bottom-box-subheading;
+        color:$bottom-box-subheading-color;
+    }
+    &__box-text{
+        line-height: 28px;
+        margin-right:6px;
+        padding-right:28px;
+        font-size: $bottom-box-text;
+        color:$bottom-box-text;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: normal;
+    }
+    @media only screen and(min-width:600px) and (max-width:1024px){
+        flex-wrap:wrap;
+        margin-bottom: 20px;
+    
+        &__section{
+            margin-right:0px;
+            width:calc(100% - 25px);
+        }
+        &__box-heading{
+            padding-right:0px;
+        }
+        
+        &__section:nth-child(1) {
+        margin-bottom: 30px;
+        }
+    }
+
+    @media only screen and (max-width:600px){
+
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        
+        &__section{
+            width:calc(100% - 30px);
+            margin:0 auto;
+            margin-bottom:20px !important;
+        }
+        &__box-heading{
+            padding-right:0px;
+            font-size:28px;
+            margin-right: 10px;
+        }
+        &__box-text{
+            font-size:14px;
+        }
+
+
+    }
+
+    
+}
+
+
+
+body{
+    background-color:$body-background-color;
+    position:relative;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        margin:0 auto;
+        width:calc(100% - 30px);
+    }
+    input{
+        width:99%;
+        padding:15px;
+        font-size:12px;
+    }
+}
+
+
+
+
+
